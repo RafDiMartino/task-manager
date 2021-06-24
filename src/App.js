@@ -1,10 +1,14 @@
 
 import './App.css';
+import { Paper } from '@material-ui/core';
+import Task from './TaskComponents/Task'
 
 function App() {
   return (
     <div className="App">
-      <h1>work in progress....</h1>
+      <Paper elevation={3}>
+        <Task />
+      </Paper>
     </div>
   );
 }
