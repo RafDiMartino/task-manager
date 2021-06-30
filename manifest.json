@@ -10,13 +10,13 @@
     {
       "src": "favicon-gold.png",
       "type": "image/png",
-      "sizes": "64x64",
+      "sizes": "32x32",
       "purpose": "any maskable"
     },
     {
       "src": "favicon-gold.png",
       "type": "image/png",
-      "sizes": "64x64"
+      "sizes": "32x32"
     }
   ],
   "start_url": ".",
