@@ -8,9 +8,9 @@
       "type": "image/png"
     },
     {
-      "src": "TM-favicon-32.png",
+      "src": "TM-round.png",
       "type": "image/png",
-      "sizes": "32x32",
+      "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
