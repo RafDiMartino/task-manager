@@ -27,8 +27,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   header: {
-    fontSize: 30,
-    fontWeight: 600,
+    fontSize: 27,
+    fontWeight: 500,
   }
 }));
 
@@ -62,7 +62,7 @@ function App(props) {
                 onChange={() => setDarkMode(!darkMode)} 
               />
             }
-            label="Dark Mode"
+            label="Toggle Dark Mode"
           />
         </Grid>
       </Grid> 

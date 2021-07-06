@@ -8,14 +8,16 @@ import { useTasks } from './store/Store'
 
 const useStyles = makeStyles((theme) => ({
     textField: {
-        width: 300,
+        width: 350,
+        fontSize:50,
         paddingRight: 10,
         [theme.breakpoints.down('xs')]: {
           width: 215,
         },
     },
     button: {
-        padding: 15.5,
+        padding: 16,
+        borderRadius: 5
     }
 }));
 
@@ -29,7 +31,7 @@ function TaskInput() {
     };
 
     return (
-        <Grid container>
+        <Grid container justify="center" alignItems="center">
             <Grid item>
                 <TextField
                     className={classes.textField} 
@@ -47,7 +49,7 @@ function TaskInput() {
                     variant="contained" 
                     color="primary"
                     onClick={handleClick}> 
-                        Add Task
+                        Add Task 
                 </Button>
             </Grid>
         </Grid>

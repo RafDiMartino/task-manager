@@ -55,6 +55,17 @@ function TaskList() {
 
     return (
         <>
+            <Grid container justify= "center">
+                <Box pt={3} pr={1} pl={1} >
+                    <Button variant="contained" color="primary" onClick={() => setFilter("all")}>All</Button>
+                </Box>
+                <Box pt={3} pr={1} pl={1}>
+                    <Button variant="contained" color="primary" onClick={() => setFilter("completed")}>Completed</Button>
+                </Box>
+                <Box pt={3} pr={1} pl={1}>
+                    <Button variant="contained" color="primary" onClick={() => setFilter("notCompleted")}>Active</Button>
+                </Box>
+            </Grid>
             <List className={classes.list}>
                 {filteredTasks.map((task) => {
             
@@ -75,17 +86,6 @@ function TaskList() {
                     );
                 })}
             </List>
-            <Grid container justify= "center">
-                <Box p={1}>
-                    <Button variant="contained" color="primary" onClick={() => setFilter("all")}>All</Button>
-                </Box>
-                <Box p={1}>
-                    <Button variant="contained" color="primary" onClick={() => setFilter("completed")}>Completed</Button>
-                </Box>
-                <Box p={1}>
-                    <Button variant="contained" color="primary" onClick={() => setFilter("notCompleted")}>Due</Button>
-                </Box>
-            </Grid>
         </>
       );
     };
